@@ -8,13 +8,13 @@ while True:
     if calc[0] == "q":
         break
     elif calc[0] == "+":
-        pass
+        print arithmetic.add(int(calc[1]),int(calc[2]))
     elif calc[0] == "-":
-        pass
+        print arithmetic.subtract(int(calc[1]),int(calc[2]))
     elif calc[0] == "*":
-        pass
+        print arithmetic.multiply(int(calc[1]),int(calc[2]))
     elif calc[0] == "/":
-        pass
+        print arithmetic.divide(float(calc[1]),float(calc[2]))
     elif calc[0] == "square":
         pass
     elif calc[0] == "cube":
