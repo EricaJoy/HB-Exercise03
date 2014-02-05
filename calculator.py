@@ -16,10 +16,10 @@ while True:
     elif calc[0] == "/":
         print arithmetic.divide(float(calc[1]),float(calc[2]))
     elif calc[0] == "square":
-        pass
+        print arithmetic.square(int(calc[1]))
     elif calc[0] == "cube":
-        pass
+        print arithmetic.cube(int(calc[1]))
     elif calc[0] == "pow":
-        pass
+        print arithmetic.power(int(calc[1]),int(calc[2]))
     elif calc[0] == "mod":
-        pass
+        print arithmetic.mod(int(calc[1]),int(calc[2]))
