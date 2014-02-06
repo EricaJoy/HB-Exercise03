@@ -21,9 +21,20 @@ while True:
     userdata = raw_input(">")
     calc = userdata.split(" ")
 
-    if calc[0] == "+" or calc[0] == "-" or calc[0] == "*" or calc[0] == "/" or calc[0] == "pow" or calc[0] == "mod":
-        if len(calc) == 3 and str(calc[1]).isdigit() == True and str(calc[2]).isdigit() == True:
+    if (
+        calc[0] == "+" or
+        calc[0] == "-" or
+        calc[0] == "*" or
+        calc[0] == "/" or
+        calc[0] == "pow" or
+        calc[0] == "mod"):
+
+        if (len(calc) >= 3 and
+            str(calc[1]).isdigit() == True and
+            str(calc[2]).isdigit() == True):
+
             basic(calc[0], calc[1], calc[2])
+        
         else:
             print "Please provide two numbers to calculate."
 
